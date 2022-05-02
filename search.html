@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search results</title>
+  <script src="scripts/search.js" type="module" ></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    #navbar {
+      background-color: pink;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+      width: 100%;
+    }
+
+    #s {
+      width: 60%;
+    }
+   #results{
+     width: 80%;
+     margin: auto;
+   }
+    #search_input {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 30px;
+      font-size: 20px;
+    }
+    .news {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .image {
+      width: 30%;
+    }
+
+    .image>img {
+      width: 100%;
+    }
+
+    .dis {
+      width: 68%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+
+  </div>
+  <!-- Same navbar with same functionality  -->
+
+  <!-- Append results inside div with id "results"  -->
+  <div id="results">
+  </div>
+  <!-- News divs will have class "news"  -->
+</body>
+
+</html>
+<script type="module">
+import {navbar} from "../components/navbar.js";
+document.querySelector("#navbar").innerHTML=navbar();
+</script>
